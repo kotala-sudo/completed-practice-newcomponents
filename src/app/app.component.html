@@ -1,16 +1,12 @@
+<div class="top-menu">
+  <img
+    class="logo"
+    src="https://www.ndsu.edu/fileadmin/www.ur.ndsu.edu/logo_usage/NDSU.oneline.jpg"
+  />
+</div>
 
-<button (click)="onClick()">Display Details!</button>
-<p *ngIf="showOrHide">
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, harum earum at dolores veniam vitae inventore ullam
-  quibusdam quo impedit. Aliquam porro numquam quidem itaque vero repellendus eos dolor quam!
-</p>
-
-<p 
-  *ngFor="let x of log , let i = index"
-  [ngStyle] = "{'background-color' : (i + 1) > 4 ? 'green' : 'transparent' , 'font-size' : '2em'}" 
-
-  [ngClass] = "(i + 1) > 4 ? 'special' : ''"
-  
-  >
-  {{i + 1}}. Hello World
-</p>
+<div class="courses">
+  <app-course-card [course] = "csci160"></app-course-card>
+  <app-course-card [course] = "csci161"></app-course-card>
+  <app-course-card [course] = "csci213"></app-course-card>
+</div>

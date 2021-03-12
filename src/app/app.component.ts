@@ -7,11 +7,8 @@ import { COURSES } from "../db-data";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  showOrHide: boolean = true;
-  count: number = 0;
-  log: number[] = [];
-  onClick() {
-    this.showOrHide = !this.showOrHide;
-    this.log.push(this.count++);
-  }
+  csci160 = COURSES[0];
+  csci161 = COURSES[1];
+  csci213 = COURSES[2];
+  
 }
